@@ -1,0 +1,12 @@
+<nav>
+  <div>
+    <input type="text" placeholder="Task Name" id="create-input" #taskName>
+    <button id="create-new" type="button" (click)="createTask(taskName.value)">Create</button>
+  </div>
+  <div class="action-buttons">
+    <span>Move to:</span>
+    <button type="button" (click)="moveTo('todo')">To Do</button>
+    <button type="button" (click)="moveTo('doing')">Doing</button>
+    <button type="button" (click)="moveTo('done')">Done</button>
+  </div>
+</nav>

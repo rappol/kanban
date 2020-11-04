@@ -1,0 +1,30 @@
+<main>
+  <div class="column" id="backlog-column">
+    <h2>Backlog</h2>
+    <!-- BACKLOG ITEMS GO HERE -->
+    <ng-container *ngFor="let task of backlogTasks$ | async">
+      <app-card [cardTask]="task"></app-card>
+    </ng-container>
+  </div>
+  <div class="column" id="todo-column">
+    <h2>To Do</h2>
+    <!-- TO DO ITEMS GO HERE -->
+    <ng-container *ngFor="let task of todoTasks$ | async">
+      <app-card [cardTask]="task"></app-card>
+    </ng-container>
+  </div>
+  <div class="column" id="doing-column">
+    <h2>Doing</h2>
+    <!-- DOING ITEMS GO HERE -->
+    <ng-container *ngFor="let task of doingTasks$ | async">
+      <app-card [cardTask]="task"></app-card>
+    </ng-container>
+  </div>
+  <div class="column" id="done-column">
+    <h2>Done</h2>
+    <!-- DONE ITEMS GO HERE -->
+    <ng-container *ngFor="let task of doneTasks$ | async">
+      <app-card [cardTask]="task"></app-card>
+    </ng-container>
+  </div>
+</main>
