@@ -21,11 +21,12 @@ export class DataService {
     this.emitItems();
   }
 
-  public moveTo(list: string) {
-    console.log('moving to ', list);
+  public moveTo(list: string) {   
+    console.log('Moving to:', list); 
     this.items.filter(task => task.selected === true).forEach(task => {
       task.list = list as BoardList;
       task.selected = false;
+      console.log('Task:', task);
     });
     this.emitItems();
   }
