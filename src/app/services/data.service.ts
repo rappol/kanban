@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, of, Subject } from 'rxjs';
-import Task, { BoardList } from './Task';
+import { Subject } from 'rxjs';
+import Task, { BoardList } from '../Task';
 
 @Injectable({
   providedIn: 'root'
@@ -21,12 +21,10 @@ export class DataService {
     this.emitItems();
   }
 
-  public moveTo(list: string) {   
-    console.log('Moving to:', list); 
+  public moveTo(list: string) {       
     this.items.filter(task => task.selected === true).forEach(task => {
       task.list = list as BoardList;
       task.selected = false;
-      console.log('Task:', task);
     });
     this.emitItems();
   }

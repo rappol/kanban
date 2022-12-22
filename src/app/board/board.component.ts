@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { DataService } from '../data.service';
+import { DataService } from '../services/data.service';
 import Task, { BoardList } from '../Task';
 
 @Component({

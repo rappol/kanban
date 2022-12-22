@@ -8,26 +8,20 @@ module.exports = function (config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      // require('karma-jasmine-html-reporter'),
-      // require('karma-coverage-istanbul-reporter'),
-      require('@angular-devkit/build-angular/plugins/karma'),
-      require('karma-junit-reporter'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage-istanbul-reporter'),
+      require('@angular-devkit/build-angular/plugins/karma'),            
       require('karma-mocha-reporter'),
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    reporters: ['mocha', 'junit'],
+    reporters: ['kjhtml', 'mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: false,
+    autoWatch: true,
     browsers: ['ChromeHeadless'],
-    singleRun: true,
-    junitReporter: {
-      useBrowserName: false,
-      outputFile: 'unit.xml',
-      suite: 'unit'
-    }
+    singleRun: false   
   });
 };

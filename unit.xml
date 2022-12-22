@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 108.0.5359.125 (Windows 10)" package="unit" timestamp="2022-12-22T18:56:05" id="0" hostname="LIS-1JTKQG3" tests="19" errors="0" failures="0" time="0.248">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/108.0.5359.125 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.085" classname=".AppComponent"/>
+  <testcase name="AppComponent Selection should allow deselecting an item after is selected" time="0.02" classname=".AppComponent Selection"/>
+  <testcase name="AppComponent Selection should allow selecting multiple items at a time" time="0.007" classname=".AppComponent Selection"/>
+  <testcase name="AppComponent Moving buttons From doing should allow moving an item from doing to todo" time="0.01" classname=".AppComponent Moving buttons From doing"/>
+  <testcase name="AppComponent Moving buttons From doing should allow moving an item from doing to done" time="0.011" classname=".AppComponent Moving buttons From doing"/>
+  <testcase name="AppComponent Moving buttons From backlog should allow moving an item from backlog to todo" time="0.011" classname=".AppComponent Moving buttons From backlog"/>
+  <testcase name="AppComponent Moving buttons From backlog should allow moving an item from backlog to doing" time="0.006" classname=".AppComponent Moving buttons From backlog"/>
+  <testcase name="AppComponent Moving buttons From backlog should allow moving an item from backlog to done" time="0.013" classname=".AppComponent Moving buttons From backlog"/>
+  <testcase name="AppComponent Moving buttons From todo should allow moving an item from todo to done" time="0.012" classname=".AppComponent Moving buttons From todo"/>
+  <testcase name="AppComponent Moving buttons From todo should allow moving an item from todo to doing" time="0.007" classname=".AppComponent Moving buttons From todo"/>
+  <testcase name="AppComponent Moving buttons Multiple/Single Items should only move the selected items between columns" time="0.011" classname=".AppComponent Moving buttons Multiple/Single Items"/>
+  <testcase name="AppComponent Moving buttons Multiple/Single Items should allow moving multiple items between columns" time="0.005" classname=".AppComponent Moving buttons Multiple/Single Items"/>
+  <testcase name="AppComponent Moving buttons From done should allow moving an item from done to todo" time="0.01" classname=".AppComponent Moving buttons From done"/>
+  <testcase name="AppComponent Moving buttons From done should allow moving an item from done to doing" time="0.011" classname=".AppComponent Moving buttons From done"/>
+  <testcase name="AppComponent Layout should start empty without any card" time="0.003" classname=".AppComponent Layout"/>
+  <testcase name="AppComponent Layout should display an item title as titlecase" time="0.007" classname=".AppComponent Layout"/>
+  <testcase name="AppComponent Create button should allow create multiple items in the backlog" time="0.005" classname=".AppComponent Create button"/>
+  <testcase name="AppComponent Create button should create a new item in the backlog when input has value" time="0.006" classname=".AppComponent Create button"/>
+  <testcase name="AppComponent Create button should not create a new item in the backlog when input is empty" time="0.008" classname=".AppComponent Create button"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
